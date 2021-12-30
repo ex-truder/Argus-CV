@@ -161,9 +161,6 @@ class ArgusCV(object):
         # h, w, ch = thresh_img.shape
         # thresh_img = QtGui.QImage(thresh_img, w, h, w * ch, QtGui.QImage.Format_RGB888).rgbSwapped()
 
-        # INVERTING IMAGE
-        # thresh_img = cv2.bitwise_not(thresh_img)
-
         # FINDING CONTOURS
         contours = self.find_contours(thresh_img)
 
